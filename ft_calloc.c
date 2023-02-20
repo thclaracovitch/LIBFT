@@ -6,7 +6,7 @@
 /*   By: thclarac <thclarac@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/03 14:44:52 by thclarac          #+#    #+#             */
-/*   Updated: 2023/02/09 14:27:08 by thclarac         ###   ########.fr       */
+/*   Updated: 2023/02/20 14:35:28 by thclarac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*array;
 
-	if (nmemb == 0 && size == 0)
+	if (nmemb == 0 || size == 0)
 		return (malloc(0));
 	if ((nmemb * size) / size != nmemb)
 		return (NULL);
